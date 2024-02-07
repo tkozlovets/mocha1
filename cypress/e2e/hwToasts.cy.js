@@ -5,18 +5,9 @@ let testData= {
     timeoutValue: 10000,
     type1: 'nb-option:contains("success")',
     rgbValue: 'rgb(96, 175, 32)'
-
-
 }
 
-// let expectedResult= {
-//     icon: 'email',
-//         title: 'test title',
-//         content: 'test content',
-//         color: 'rgb(96, 175, 32)',
-//     // position:
-//
-// }
+
 
 before(() => {
     cy.visit('https://sanitarskyi-ngx-admin.herokuapp.com/');
@@ -51,6 +42,15 @@ it(`Filling out`, () => {
 
     cy.get('nb-toast').should('have.css', 'background-color').and('eq',
         `${testData.rgbValue}`);
+
+    cy.get('nb-toast').invoke('offset').then(offset =>{
+
+        const top = offset.top;
+        const left = offset.left;
+
+        expect(top).to.equal(8);
+        expect(left).to.be.approximately(1140, 1150);
+    });
 
 
 })
