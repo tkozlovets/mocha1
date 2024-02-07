@@ -20,7 +20,31 @@ let testData= [{
     rgbValue: 'rgb(96, 175, 32)',
     jcValue: 'flex-start',
     aiValue: 'flex-start'
-}]
+},
+    {
+
+        position: 'button:contains("top-right")',
+        position1: 'nb-option:contains("bottom-left")',
+        titleValue: "Tanya toast",
+        contentValue: "Tanya content",
+        timeoutValue: 10000,
+        type1: 'nb-option:contains("success")',
+        rgbValue: 'rgb(96, 175, 32)',
+        jcValue: 'flex-start',
+        aiValue: 'flex-end'
+    },
+    {
+    position: 'button:contains("top-right")',
+    position1: 'nb-option:contains("bottom-right")',
+    titleValue: "Tanya toast",
+    contentValue: "Tanya content",
+    timeoutValue: 10000,
+    type1: 'nb-option:contains("success")',
+    rgbValue: 'rgb(96, 175, 32)',
+    jcValue: 'flex-end',
+    aiValue: 'flex-end',
+}
+]
 
 
 
@@ -70,5 +94,4 @@ testData.forEach(testData => {
 })
 
 
-// style="justify-content: flex-end; align-items: flex-start
-// justify-content: flex-start; align-items: flex-start;
+
