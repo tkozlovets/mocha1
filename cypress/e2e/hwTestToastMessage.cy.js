@@ -12,7 +12,7 @@
 // знаходиться у місці, відповідному до обраної позиції, має колір та містить іконку
 // відповідні до обраного типу тоста.
 
-// The array of objects with test data is created
+// The array of objects with test data
 let testData= [{
     position: 'button:contains("top-right")',
     position1: 'nb-option:contains("top-end")',

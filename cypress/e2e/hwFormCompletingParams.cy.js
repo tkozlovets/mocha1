@@ -1,7 +1,9 @@
 
+// На сторінці https://sanitarskyi-ngx-admin.herokuapp.com/pages/forms/layouts
+//     Заповнити будь-яку форму за допомогою параметризованого теста.
 
-
-let testData = [{
+// The array of objects with test data
+    let testData = [{
     fieldSelector: '[placeholder="Jane Doe"]',
     inputValue: "Tetiana Kozlovets",
     fieldSelector1: 'nb-card.inline-form-card [placeholder="Email"]',
@@ -15,7 +17,6 @@ let testData = [{
     inputValue3: "Thebestpassword12+",
     fieldSelector6: 'span:contains("Option 1")',
     fieldSelector7: '.form-horizontal.ng-untouched.ng-pristine.ng-valid button',
-
 
     fieldSelector8: 'nb-card:contains("Basic form") [placeholder="Email"]',
     inputValue4: "tk@gmail.com",
@@ -99,7 +100,7 @@ let testData = [{
         fieldSelector24: 'nb-card:contains("Horizontal form") button',
 
     }]
-
+// Steps to get to the form
 beforeEach(() => {
     cy.visit('https://sanitarskyi-ngx-admin.herokuapp.com/');
 
@@ -110,7 +111,7 @@ beforeEach(() => {
     cy.get('span:contains("Form Layouts")').click();
 
 })
-
+//Form filling out
 testData.forEach(testData => {it(`Form filling out`, () => {
 
 

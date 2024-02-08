@@ -1,4 +1,6 @@
-
+// На сторінці https://sanitarskyi-ngx-admin.herokuapp.com/pages/forms/layouts
+//Заповнити будь-яку форму за допомогою параметризованого теста.
+//Form filling out without parametrized test.
 describe('Homework-locators', () => {
     it('Homework-locators', () => {
         cy.visit('https://sanitarskyi-ngx-admin.herokuapp.com/');
